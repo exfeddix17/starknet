@@ -8,7 +8,7 @@ if exists curl; then
 else
   sudo apt install curl -y < "/dev/null"
 fi
-curl -s https://raw.githubusercontent.com/exfeddix17/cryptohodl/main/cryptohodl.sh | bash && sleep 2
+curl -s https://raw.githubusercontent.com/exfeddix17/luckyteam/main/luckyteam.sh | bash && sleep 2
 echo "==================================================="
 sleep 2
 sudo apt update -y && sudo apt install curl git tmux python3 python3-venv python3-dev build-essential libgmp-dev pkg-config libssl-dev -y
@@ -17,7 +17,7 @@ source $HOME/.cargo/env
 rustup update stable --force
 cd $HOME
 rm -rf pathfinder
-git clone -b v0.1.6-alpha https://github.com/eqlabs/pathfinder.git
+git clone -b v0.2.2-alpha https://github.com/eqlabs/pathfinder.git
 cd pathfinder/py
 python3 -m venv .venv
 source .venv/bin/activate
